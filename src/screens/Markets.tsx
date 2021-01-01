@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   FlatList,
   SafeAreaView,
@@ -7,20 +7,25 @@ import {
   View,
 } from 'react-native';
 import useSwr from 'swr';
-import { getProductStats } from '../api/products';
+import {
+  getProductStats,
+  getSparklines,
+  ProductSparklinesResponse,
+} from '../api/products';
 import MarketRow from '../components/MarketRow';
 import Text from '../components/Text';
 import { NavigationComponent } from '../navigation';
 
-const MARKETS = [
-  { name: 'BTC - USD', price: 29416.66 },
-  { name: 'ETH - USD', price: 737.77 },
-  { name: 'ETH - USD', price: 737.77 },
-  { name: 'ETH - USD', price: 737.77 },
-];
-
 const MarketsScreen: NavigationComponent = () => {
   const { data: productsMap, error } = useSwr('products', getProductStats);
+  const [
+    sparklineData,
+    setSparklineData,
+  ] = useState<ProductSparklinesResponse | null>(null);
+
+  useEffect(() => {
+    getSparklines().then((sparklines) => setSparklineData(sparklines));
+  }, []);
 
   if (error)
     return (
@@ -47,7 +52,11 @@ const MarketsScreen: NavigationComponent = () => {
         data={Object.keys(productsMap)}
         renderItem={({ item }) => (
           <TouchableOpacity activeOpacity={0.5}>
-            <MarketRow name={item} product={productsMap[item]} />
+            <MarketRow
+              name={item}
+              product={productsMap[item]}
+              sparkline={sparklineData ? sparklineData[item] : undefined}
+            />
           </TouchableOpacity>
         )}
       />
