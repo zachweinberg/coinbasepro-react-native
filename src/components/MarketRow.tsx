@@ -1,19 +1,17 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { CoinbaseProductStat, CoinbaseSparkline } from '../api/products';
+import { CoinbaseProductStat } from '../api/products';
 import Text from '../components/Text';
 import { getPercentChange } from '../utils/pricing';
 
 interface Props {
   name: string;
   product: CoinbaseProductStat;
-  sparkline: CoinbaseSparkline | undefined;
 }
 
 const MarketRow: React.FunctionComponent<Props> = ({
   name,
   product,
-  sparkline,
 }: Props) => {
   const percentChange = getPercentChange(
     product.stats_24hour.open,

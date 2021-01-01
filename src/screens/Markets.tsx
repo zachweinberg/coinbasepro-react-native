@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {
   FlatList,
   SafeAreaView,
@@ -7,32 +7,21 @@ import {
   View,
 } from 'react-native';
 import useSwr from 'swr';
-import {
-  getProductStats,
-  getSparklines,
-  ProductSparklinesResponse,
-} from '../api/products';
+import { getProductStats } from '../api/products';
 import MarketRow from '../components/MarketRow';
 import Text from '../components/Text';
 import { NavigationComponent } from '../navigation';
 
 const MarketsScreen: NavigationComponent = () => {
   const { data: productsMap, error } = useSwr('products', getProductStats);
-  const [
-    sparklineData,
-    setSparklineData,
-  ] = useState<ProductSparklinesResponse | null>(null);
 
-  useEffect(() => {
-    getSparklines().then((sparklines) => setSparklineData(sparklines));
-  }, []);
-
-  if (error)
+  if (error) {
     return (
       <Text type="red" size={15} bold>
         Could not load markets
       </Text>
     );
+  }
 
   if (!productsMap) {
     return null;
@@ -52,11 +41,7 @@ const MarketsScreen: NavigationComponent = () => {
         data={Object.keys(productsMap)}
         renderItem={({ item }) => (
           <TouchableOpacity activeOpacity={0.5}>
-            <MarketRow
-              name={item}
-              product={productsMap[item]}
-              sparkline={sparklineData ? sparklineData[item] : undefined}
-            />
+            <MarketRow name={item} product={productsMap[item]} />
           </TouchableOpacity>
         )}
       />
@@ -78,8 +63,6 @@ MarketsScreen.options = () => ({
   },
 });
 
-export default MarketsScreen;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -93,3 +76,5 @@ const styles = StyleSheet.create({
     padding: 25,
   },
 });
+
+export default MarketsScreen;

@@ -11,11 +11,9 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
-    "@react-native-community/art": "^1.2.0",
     "react": "16.13.1",
     "react-native": "0.63.3",
     "react-native-navigation": "^7.7.0",
-    "react-native-sparkline": "^2.0.0-beta",
     "swr": "^0.3.11"
   },
   "devDependencies": {

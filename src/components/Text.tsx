@@ -4,8 +4,9 @@ import Colors from '../colors';
 
 interface CustomProps {
   size: number;
-  bold?: boolean;
   type: 'primary' | 'secondary' | 'tertiary' | 'green' | 'red';
+  bold?: boolean;
+  spread?: boolean;
 }
 
 export type CustomTextProps = TextProps & CustomProps;
@@ -15,6 +16,7 @@ const Text: React.FunctionComponent<CustomTextProps> = ({
   size,
   bold,
   type,
+  spread,
   ...props
 }) => {
   const fontWeight = bold ? '600' : '400';
@@ -49,6 +51,7 @@ const Text: React.FunctionComponent<CustomTextProps> = ({
         style,
         { fontWeight },
         { color },
+        { letterSpacing: spread ? 3 : 0.4 },
       ])}
     />
   );
