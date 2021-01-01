@@ -1,5 +1,13 @@
 import React from 'react';
-import { FlatList, SafeAreaView, StyleSheet, View } from 'react-native';
+import {
+  FlatList,
+  SafeAreaView,
+  StyleSheet,
+  TouchableOpacity,
+  View,
+} from 'react-native';
+import useSwr from 'swr';
+import { getProductStats } from '../api/products';
 import MarketRow from '../components/MarketRow';
 import Text from '../components/Text';
 import { NavigationComponent } from '../navigation';
@@ -12,6 +20,19 @@ const MARKETS = [
 ];
 
 const MarketsScreen: NavigationComponent = () => {
+  const { data: productsMap, error } = useSwr('products', getProductStats);
+
+  if (error)
+    return (
+      <Text type="red" size={15} bold>
+        Could not load markets
+      </Text>
+    );
+
+  if (!productsMap) {
+    return null;
+  }
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.labelBar}>
@@ -23,8 +44,12 @@ const MarketsScreen: NavigationComponent = () => {
         </Text>
       </View>
       <FlatList
-        data={MARKETS}
-        renderItem={({ item }) => <MarketRow market={item} />}
+        data={Object.keys(productsMap)}
+        renderItem={({ item }) => (
+          <TouchableOpacity activeOpacity={0.5}>
+            <MarketRow name={item} product={productsMap[item]} />
+          </TouchableOpacity>
+        )}
       />
     </SafeAreaView>
   );
@@ -56,6 +81,6 @@ const styles = StyleSheet.create({
     marginTop: 10,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    padding: 20,
+    padding: 25,
   },
 });

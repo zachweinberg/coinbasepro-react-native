@@ -1,30 +1,45 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
+import { CoinbaseProductStat } from '../api/products';
 import Text from '../components/Text';
-import { Market } from '../types';
+import { getPercentChange } from '../utils/pricing';
 
 interface Props {
-  market: Market;
+  name: string;
+  product: CoinbaseProductStat;
 }
 
-const MarketRow: React.FunctionComponent<Props> = ({ market }: Props) => {
+const MarketRow: React.FunctionComponent<Props> = ({
+  name,
+  product,
+}: Props) => {
+  const percentChange = getPercentChange(
+    product.stats_24hour.open,
+    product.stats_24hour.last,
+  );
+
   return (
     <View style={styles.container}>
       <View>
-        <Text type="primary" size={18} bold>
-          {market.name}
+        <Text type="primary" size={17} bold>
+          {name}
         </Text>
         <Text type="secondary" size={13} bold style={{ marginTop: 5 }}>
-          {market.price}
+          {product.stats_24hour.volume}
         </Text>
       </View>
       <View style={{ flex: 1 }}></View>
       <View>
         <Text type="primary" size={18} bold>
-          ${market.price}
+          ${product.stats_24hour.last}
         </Text>
-        <Text type="green" size={13} bold style={styles.pctChange}>
-          +2.45%
+        <Text
+          type={percentChange < 0 ? 'red' : 'green'}
+          size={14}
+          bold
+          style={styles.pctChange}>
+          {percentChange >= 0 && '+'}
+          {percentChange}%
         </Text>
       </View>
     </View>
@@ -38,7 +53,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     backgroundColor: 'black',
-    paddingHorizontal: 20,
+    paddingHorizontal: 25,
     marginBottom: 17,
   },
   pctChange: {
