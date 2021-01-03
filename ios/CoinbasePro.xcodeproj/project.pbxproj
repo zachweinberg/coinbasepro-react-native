@@ -11,15 +11,15 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		185BD2D233CDF06273A97D60 /* libPods-CoinbasePro-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB21C4E2A6B8FC626C403F6B /* libPods-CoinbasePro-tvOSTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* CoinbaseProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CoinbaseProTests.m */; };
-		3E80E51596091E8F0535DF9B /* libPods-CoinbasePro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD444526CB3A6FB83F63C1E /* libPods-CoinbasePro.a */; };
-		683EB13F89467FB02552A6B9 /* libPods-CoinbasePro-CoinbaseProTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A490505C275CBBBAAB7CFDAC /* libPods-CoinbasePro-CoinbaseProTests.a */; };
+		4A06C770CD723A5E14B0FEFF /* libPods-CoinbasePro-CoinbaseProTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DF424F75363153CFD7DDE1 /* libPods-CoinbasePro-CoinbaseProTests.a */; };
+		61D41FE4EB912E802E7CBE20 /* libPods-CoinbasePro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D8FE08E65029527605B12C /* libPods-CoinbasePro.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		9CE74777C535096A6F8ED649 /* libPods-CoinbasePro-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8ADA74C8445454167A4866 /* libPods-CoinbasePro-tvOSTests.a */; };
-		D87E51A7B701F62438184B42 /* libPods-CoinbasePro-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0515717DDB56C283597505C5 /* libPods-CoinbasePro-tvOS.a */; };
+		B4416ED636CFC916A7CCE60E /* libPods-CoinbasePro-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A00101A90A59CD8C38EC3F59 /* libPods-CoinbasePro-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,12 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008B2D1DCC2A7977B2D51390 /* Pods-CoinbasePro-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinbasePro-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-CoinbasePro-tvOSTests/Pods-CoinbasePro-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* CoinbaseProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinbaseProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* CoinbaseProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoinbaseProTests.m; sourceTree = "<group>"; };
-		0515717DDB56C283597505C5 /* libPods-CoinbasePro-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoinbasePro-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* CoinbasePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinbasePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CoinbasePro/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = CoinbasePro/AppDelegate.m; sourceTree = "<group>"; };
@@ -54,19 +52,21 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CoinbasePro/main.m; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* CoinbasePro-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoinbasePro-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* CoinbasePro-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoinbasePro-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B5953125ED4BEC4EBCEA76A /* Pods-CoinbasePro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinbasePro.debug.xcconfig"; path = "Target Support Files/Pods-CoinbasePro/Pods-CoinbasePro.debug.xcconfig"; sourceTree = "<group>"; };
-		449239ABCE19C00AE6C55F02 /* Pods-CoinbasePro-CoinbaseProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinbasePro-CoinbaseProTests.debug.xcconfig"; path = "Target Support Files/Pods-CoinbasePro-CoinbaseProTests/Pods-CoinbasePro-CoinbaseProTests.debug.xcconfig"; sourceTree = "<group>"; };
-		58026B3807C60985C65A133B /* Pods-CoinbasePro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinbasePro.release.xcconfig"; path = "Target Support Files/Pods-CoinbasePro/Pods-CoinbasePro.release.xcconfig"; sourceTree = "<group>"; };
-		7D478AC0355657612EC36D38 /* Pods-CoinbasePro-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinbasePro-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-CoinbasePro-tvOSTests/Pods-CoinbasePro-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		81AB0365A2F9E0F6FD90CF0D /* Pods-CoinbasePro-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinbasePro-tvOS.release.xcconfig"; path = "Target Support Files/Pods-CoinbasePro-tvOS/Pods-CoinbasePro-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		3833B4CF1D15525430AD2CA7 /* Pods-CoinbasePro-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinbasePro-tvOS.release.xcconfig"; path = "Target Support Files/Pods-CoinbasePro-tvOS/Pods-CoinbasePro-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		46D8FE08E65029527605B12C /* libPods-CoinbasePro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoinbasePro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ABBF830BD7E6C9D10CCACA5 /* Pods-CoinbasePro-CoinbaseProTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinbasePro-CoinbaseProTests.release.xcconfig"; path = "Target Support Files/Pods-CoinbasePro-CoinbaseProTests/Pods-CoinbasePro-CoinbaseProTests.release.xcconfig"; sourceTree = "<group>"; };
+		4DA534C515389E78C3FE139D /* Pods-CoinbasePro-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinbasePro-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-CoinbasePro-tvOSTests/Pods-CoinbasePro-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E62AF63C5092ACD7955DD88 /* Pods-CoinbasePro-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinbasePro-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-CoinbasePro-tvOS/Pods-CoinbasePro-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		55A175B710C437535E641427 /* Pods-CoinbasePro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinbasePro.debug.xcconfig"; path = "Target Support Files/Pods-CoinbasePro/Pods-CoinbasePro.debug.xcconfig"; sourceTree = "<group>"; };
+		7B39DB4466289C8A7535C210 /* Pods-CoinbasePro-CoinbaseProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinbasePro-CoinbaseProTests.debug.xcconfig"; path = "Target Support Files/Pods-CoinbasePro-CoinbaseProTests/Pods-CoinbasePro-CoinbaseProTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CoinbasePro/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8F8ADA74C8445454167A4866 /* libPods-CoinbasePro-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoinbasePro-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A490505C275CBBBAAB7CFDAC /* libPods-CoinbasePro-CoinbaseProTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoinbasePro-CoinbaseProTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDD444526CB3A6FB83F63C1E /* libPods-CoinbasePro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoinbasePro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCB0315B1FA019139619EFE1 /* Pods-CoinbasePro-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinbasePro-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-CoinbasePro-tvOS/Pods-CoinbasePro-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A00101A90A59CD8C38EC3F59 /* libPods-CoinbasePro-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoinbasePro-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7DF424F75363153CFD7DDE1 /* libPods-CoinbasePro-CoinbaseProTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoinbasePro-CoinbaseProTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5DBC7AAEA2E666223F73549 /* Pods-CoinbasePro-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinbasePro-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-CoinbasePro-tvOSTests/Pods-CoinbasePro-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		E87EB636ED0FE6FEF434CFA1 /* Pods-CoinbasePro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinbasePro.release.xcconfig"; path = "Target Support Files/Pods-CoinbasePro/Pods-CoinbasePro.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F25EACA4C9B7CEDA36592736 /* Pods-CoinbasePro-CoinbaseProTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinbasePro-CoinbaseProTests.release.xcconfig"; path = "Target Support Files/Pods-CoinbasePro-CoinbaseProTests/Pods-CoinbasePro-CoinbaseProTests.release.xcconfig"; sourceTree = "<group>"; };
+		FB21C4E2A6B8FC626C403F6B /* libPods-CoinbasePro-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoinbasePro-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				683EB13F89467FB02552A6B9 /* libPods-CoinbasePro-CoinbaseProTests.a in Frameworks */,
+				4A06C770CD723A5E14B0FEFF /* libPods-CoinbasePro-CoinbaseProTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E80E51596091E8F0535DF9B /* libPods-CoinbasePro.a in Frameworks */,
+				61D41FE4EB912E802E7CBE20 /* libPods-CoinbasePro.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D87E51A7B701F62438184B42 /* libPods-CoinbasePro-tvOS.a in Frameworks */,
+				B4416ED636CFC916A7CCE60E /* libPods-CoinbasePro-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CE74777C535096A6F8ED649 /* libPods-CoinbasePro-tvOSTests.a in Frameworks */,
+				185BD2D233CDF06273A97D60 /* libPods-CoinbasePro-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				BDD444526CB3A6FB83F63C1E /* libPods-CoinbasePro.a */,
-				A490505C275CBBBAAB7CFDAC /* libPods-CoinbasePro-CoinbaseProTests.a */,
-				0515717DDB56C283597505C5 /* libPods-CoinbasePro-tvOS.a */,
-				8F8ADA74C8445454167A4866 /* libPods-CoinbasePro-tvOSTests.a */,
+				46D8FE08E65029527605B12C /* libPods-CoinbasePro.a */,
+				C7DF424F75363153CFD7DDE1 /* libPods-CoinbasePro-CoinbaseProTests.a */,
+				A00101A90A59CD8C38EC3F59 /* libPods-CoinbasePro-tvOS.a */,
+				FB21C4E2A6B8FC626C403F6B /* libPods-CoinbasePro-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,7 +164,7 @@
 				00E356EF1AD99517003FC87E /* CoinbaseProTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				C7E868567970873599119868 /* Pods */,
+				9CC844A4BBF81A2331A35F00 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -182,17 +182,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C7E868567970873599119868 /* Pods */ = {
+		9CC844A4BBF81A2331A35F00 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B5953125ED4BEC4EBCEA76A /* Pods-CoinbasePro.debug.xcconfig */,
-				58026B3807C60985C65A133B /* Pods-CoinbasePro.release.xcconfig */,
-				449239ABCE19C00AE6C55F02 /* Pods-CoinbasePro-CoinbaseProTests.debug.xcconfig */,
-				F25EACA4C9B7CEDA36592736 /* Pods-CoinbasePro-CoinbaseProTests.release.xcconfig */,
-				DCB0315B1FA019139619EFE1 /* Pods-CoinbasePro-tvOS.debug.xcconfig */,
-				81AB0365A2F9E0F6FD90CF0D /* Pods-CoinbasePro-tvOS.release.xcconfig */,
-				008B2D1DCC2A7977B2D51390 /* Pods-CoinbasePro-tvOSTests.debug.xcconfig */,
-				7D478AC0355657612EC36D38 /* Pods-CoinbasePro-tvOSTests.release.xcconfig */,
+				55A175B710C437535E641427 /* Pods-CoinbasePro.debug.xcconfig */,
+				E87EB636ED0FE6FEF434CFA1 /* Pods-CoinbasePro.release.xcconfig */,
+				7B39DB4466289C8A7535C210 /* Pods-CoinbasePro-CoinbaseProTests.debug.xcconfig */,
+				4ABBF830BD7E6C9D10CCACA5 /* Pods-CoinbasePro-CoinbaseProTests.release.xcconfig */,
+				4E62AF63C5092ACD7955DD88 /* Pods-CoinbasePro-tvOS.debug.xcconfig */,
+				3833B4CF1D15525430AD2CA7 /* Pods-CoinbasePro-tvOS.release.xcconfig */,
+				4DA534C515389E78C3FE139D /* Pods-CoinbasePro-tvOSTests.debug.xcconfig */,
+				E5DBC7AAEA2E666223F73549 /* Pods-CoinbasePro-tvOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -205,11 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "CoinbaseProTests" */;
 			buildPhases = (
-				41541A864D835649E1B6FB31 /* [CP] Check Pods Manifest.lock */,
+				A90CF2D9F27CEF73E794C961 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				4163CD137839369BD9E6A224 /* [CP] Copy Pods Resources */,
+				CC5BF28BFCFD69307CCCFE67 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,13 +225,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CoinbasePro" */;
 			buildPhases = (
-				CECE6923003C03675ACB9107 /* [CP] Check Pods Manifest.lock */,
+				99EE91251E4F7CF52F484B25 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				DA63D34DCE7CF7AB9B9C342C /* [CP] Copy Pods Resources */,
+				2B31C5E06B08E56D02AE2A00 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,7 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "CoinbasePro-tvOS" */;
 			buildPhases = (
-				57724E5735641AAA2E6BA892 /* [CP] Check Pods Manifest.lock */,
+				AFA7402D84CB8CF0714E70CC /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -266,7 +266,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "CoinbasePro-tvOSTests" */;
 			buildPhases = (
-				BDBB94AEF1504433AEE20C07 /* [CP] Check Pods Manifest.lock */,
+				35D2069549829B77E0BD46FC /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -377,6 +377,24 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		2B31C5E06B08E56D02AE2A00 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoinbasePro/Pods-CoinbasePro-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoinbasePro/Pods-CoinbasePro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -391,69 +409,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		41541A864D835649E1B6FB31 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CoinbasePro-CoinbaseProTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4163CD137839369BD9E6A224 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CoinbasePro-CoinbaseProTests/Pods-CoinbasePro-CoinbaseProTests-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoinbasePro-CoinbaseProTests/Pods-CoinbasePro-CoinbaseProTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		57724E5735641AAA2E6BA892 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CoinbasePro-tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BDBB94AEF1504433AEE20C07 /* [CP] Check Pods Manifest.lock */ = {
+		35D2069549829B77E0BD46FC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -475,7 +431,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CECE6923003C03675ACB9107 /* [CP] Check Pods Manifest.lock */ = {
+		99EE91251E4F7CF52F484B25 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -497,13 +453,57 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DA63D34DCE7CF7AB9B9C342C /* [CP] Copy Pods Resources */ = {
+		A90CF2D9F27CEF73E794C961 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinbasePro-CoinbaseProTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFA7402D84CB8CF0714E70CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinbasePro-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC5BF28BFCFD69307CCCFE67 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CoinbasePro/Pods-CoinbasePro-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CoinbasePro-CoinbaseProTests/Pods-CoinbasePro-CoinbaseProTests-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -512,7 +512,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoinbasePro/Pods-CoinbasePro-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoinbasePro-CoinbaseProTests/Pods-CoinbasePro-CoinbaseProTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -608,7 +608,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 449239ABCE19C00AE6C55F02 /* Pods-CoinbasePro-CoinbaseProTests.debug.xcconfig */;
+			baseConfigurationReference = 7B39DB4466289C8A7535C210 /* Pods-CoinbasePro-CoinbaseProTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -631,7 +631,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F25EACA4C9B7CEDA36592736 /* Pods-CoinbasePro-CoinbaseProTests.release.xcconfig */;
+			baseConfigurationReference = 4ABBF830BD7E6C9D10CCACA5 /* Pods-CoinbasePro-CoinbaseProTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -651,7 +651,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B5953125ED4BEC4EBCEA76A /* Pods-CoinbasePro.debug.xcconfig */;
+			baseConfigurationReference = 55A175B710C437535E641427 /* Pods-CoinbasePro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -674,7 +674,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58026B3807C60985C65A133B /* Pods-CoinbasePro.release.xcconfig */;
+			baseConfigurationReference = E87EB636ED0FE6FEF434CFA1 /* Pods-CoinbasePro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -695,7 +695,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCB0315B1FA019139619EFE1 /* Pods-CoinbasePro-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 4E62AF63C5092ACD7955DD88 /* Pods-CoinbasePro-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -723,7 +723,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81AB0365A2F9E0F6FD90CF0D /* Pods-CoinbasePro-tvOS.release.xcconfig */;
+			baseConfigurationReference = 3833B4CF1D15525430AD2CA7 /* Pods-CoinbasePro-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -751,7 +751,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 008B2D1DCC2A7977B2D51390 /* Pods-CoinbasePro-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 4DA534C515389E78C3FE139D /* Pods-CoinbasePro-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -778,7 +778,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D478AC0355657612EC36D38 /* Pods-CoinbasePro-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = E5DBC7AAEA2E666223F73549 /* Pods-CoinbasePro-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

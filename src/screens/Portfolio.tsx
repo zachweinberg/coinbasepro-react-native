@@ -51,14 +51,6 @@ const PortfolioScreen: NavigationComponent = () => {
   );
 };
 
-PortfolioScreen.options = () => ({
-  topBar: {
-    title: {
-      text: 'Portfolio',
-    },
-  },
-});
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,

@@ -17,7 +17,7 @@ const renderLabelBar = () => (
   </LabelBar>
 );
 
-const MarketsScreen: NavigationComponent = () => {
+const MarketsScreen: NavigationComponent = ({ navigation }) => {
   const { data: productsMap, error } = useSwr('products', getProductStats);
 
   if (!productsMap) {
@@ -38,29 +38,13 @@ const MarketsScreen: NavigationComponent = () => {
   );
 };
 
-MarketsScreen.options = () => ({
-  topBar: {
-    hideOnScroll: false,
-    drawBehind: true,
-    searchBar: {
-      visible: true,
-      tintColor: 'white',
-      backgroundColor: '#1a1a1a',
-    },
-    searchBarPlaceholder: 'Search',
-    title: {
-      text: 'Markets',
-    },
-  },
-});
-
 const Container = styled.SafeAreaView`
   flex: 1;
   background-color: black;
 `;
 
 const LabelBar = styled.View`
-  background-color: red;
+  background-color: black;
   flex-direction: row;
   justify-content: space-between;
   padding: 25px;

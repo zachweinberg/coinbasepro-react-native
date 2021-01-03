@@ -16,12 +16,4 @@ const AccountScreen: NavigationComponent = () => {
   );
 };
 
-AccountScreen.options = () => ({
-  topBar: {
-    title: {
-      text: 'Account',
-    },
-  },
-});
-
 export default AccountScreen;

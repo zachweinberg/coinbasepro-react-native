@@ -18,14 +18,6 @@ const OrdersScreen: NavigationComponent = () => {
   );
 };
 
-OrdersScreen.options = () => ({
-  topBar: {
-    title: {
-      text: 'Orders',
-    },
-  },
-});
-
 const Bar = styled.Text`
   background-color: red;
   width: 300;

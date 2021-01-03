@@ -1,8 +1,8 @@
 enum Routes {
-  MarketsScreen = 'MarketsScreen',
-  PortfolioScreen = 'PortfolioScreen',
-  OrdersScreen = 'OrdersScreen',
-  AccountScreen = 'AccountScreen',
+  Markets = 'Markets',
+  Portfolio = 'Portfolio',
+  Orders = 'Orders',
+  Account = 'Account',
 }
 
 export default Routes;
