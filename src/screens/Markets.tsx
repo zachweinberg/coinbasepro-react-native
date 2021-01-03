@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SectionList } from 'react-native';
 import styled from 'styled-components/native';
 import useSwr from 'swr';
 import { getProductStats } from '../api/products';
 import Text from '../components/Text';
-import { NavigationComponent } from '../navigation';
 
 const renderLabelBar = () => (
   <LabelBar>
@@ -17,8 +16,9 @@ const renderLabelBar = () => (
   </LabelBar>
 );
 
-const MarketsScreen: NavigationComponent = ({ navigation }) => {
+const MarketsScreen = () => {
   const { data: productsMap, error } = useSwr('products', getProductStats);
+  const [search, setSearch] = useState('');
 
   if (!productsMap) {
     return null;
