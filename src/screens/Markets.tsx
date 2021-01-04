@@ -2,52 +2,70 @@ import React, { useState } from 'react';
 import { SectionList } from 'react-native';
 import styled from 'styled-components/native';
 import useSwr from 'swr';
-import { getProductStats } from '../api/products';
+import { getProducts } from '../api/products';
 import Text from '../components/Text';
+import MarketRow from '../components/MarketRow';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const renderLabelBar = () => (
   <LabelBar>
-    <Text type="tertiary" size={17} bold>
-      FIAT MARKETS
-    </Text>
-    <Text type="tertiary" size={17} bold>
-      24HR
-    </Text>
+    <Text variant="Label1">FIAT MARKETS</Text>
+    <Text variant="Label1">24HR</Text>
   </LabelBar>
 );
 
 const MarketsScreen = () => {
-  const { data: productsMap, error } = useSwr('products', getProductStats);
+  const { data: products, error } = useSwr('products', getProducts);
   const [search, setSearch] = useState('');
 
-  if (!productsMap) {
+  if (!products) {
     return null;
   }
 
-  const sections = [{ title: 'Fiat', data: Object.keys(productsMap) }];
+  const sections = [{ title: 'Markets', data: products }];
 
   return (
     <Container>
+      <SearchBar
+        placeholder="Search"
+        placeholderTextColor="#ccc"
+        onChangeText={(text) => setSearch(text)}
+        value={search}
+      />
       <SectionList
         sections={sections}
         renderSectionHeader={renderLabelBar}
-        renderItem={({ item }) => <Text>{item}</Text>}
-        style={{ flex: 1 }}
+        renderItem={({ item }) => (
+          <TouchableOpacity activeOpacity={0.7}>
+            <MarketRow product={item} />
+          </TouchableOpacity>
+        )}
       />
     </Container>
   );
 };
 
-const Container = styled.SafeAreaView`
+const Container = styled.View`
   flex: 1;
   background-color: black;
+  padding: 20px;
 `;
 
 const LabelBar = styled.View`
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: black;
   flex-direction: row;
   justify-content: space-between;
-  padding: 25px;
+`;
+
+const SearchBar = styled.TextInput`
+  opacity: 0.8;
+  color: #fff;
+  padding: 10px;
+  border-radius: 18px;
+  background-color: #1a1a1a;
+  font-size: 18px;
 `;
 
 export default MarketsScreen;

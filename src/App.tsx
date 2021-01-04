@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -19,8 +20,22 @@ const screenOptions: StackHeaderOptions = {
     shadowColor: 'transparent',
   },
   headerTintColor: 'white',
-  headerTitleStyle: { fontWeight: 'bold', fontSize: 30 },
-  headerTitleContainerStyle: { marginLeft: 10, paddingTop: 10 },
+  headerTitleStyle: { fontWeight: 'bold', fontSize: 35 },
+  headerTitleContainerStyle: {
+    paddingLeft: 2,
+    paddingTop: 10,
+  },
+};
+
+const tabBarOptions = {
+  activeTintColor: '#d5d5d5',
+  inactiveTintColor: '#4a4a4a',
+  showLabel: false,
+  style: {
+    paddingHorizontal: 65,
+    backgroundColor: '#0b0b0b',
+    borderTopWidth: 0,
+  },
 };
 
 const MarketsStack = () => (
@@ -35,6 +50,16 @@ const PortfolioStack = () => (
   </Stack.Navigator>
 );
 
+const renderTabIcon = (icon: any, color: string) => {
+  return (
+    <Image
+      source={icon}
+      style={{ height: 30, width: 30, tintColor: color }}
+      resizeMode="contain"
+    />
+  );
+};
+
 const App = () => {
   return (
     <>
@@ -42,36 +67,37 @@ const App = () => {
       <NavigationContainer>
         <Tab.Navigator
           initialRouteName={Routes.Markets}
-          tabBarOptions={{
-            activeTintColor: '#d5d5d5',
-            inactiveTintColor: '#4a4a4a',
-            showLabel: false,
-            style: { backgroundColor: '#0e0e0e', borderTopWidth: 0 },
-          }}>
+          tabBarOptions={tabBarOptions}>
           <Tab.Screen
             name={Routes.Markets}
             component={MarketsStack}
             options={{
-              tabBarIcon: ({ color }) => (
-                <Image
-                  source={require('./assets/bar.png')}
-                  style={{ height: 25, width: 25, tintColor: color }}
-                  resizeMode="contain"
-                />
-              ),
+              tabBarIcon: ({ color }) =>
+                renderTabIcon(require('./assets/bar.png'), color),
             }}
           />
           <Tab.Screen
             name={Routes.Portfolio}
             component={PortfolioStack}
             options={{
-              tabBarIcon: ({ color }) => (
-                <Image
-                  source={require('./assets/chart.png')}
-                  style={{ height: 25, width: 25, tintColor: color }}
-                  resizeMode="contain"
-                />
-              ),
+              tabBarIcon: ({ color }) =>
+                renderTabIcon(require('./assets/chart.png'), color),
+            }}
+          />
+          <Tab.Screen
+            name={Routes.Orders}
+            component={PortfolioStack}
+            options={{
+              tabBarIcon: ({ color }) =>
+                renderTabIcon(require('./assets/orders.png'), color),
+            }}
+          />
+          <Tab.Screen
+            name={Routes.Account}
+            component={PortfolioStack}
+            options={{
+              tabBarIcon: ({ color }) =>
+                renderTabIcon(require('./assets/person.png'), color),
             }}
           />
         </Tab.Navigator>

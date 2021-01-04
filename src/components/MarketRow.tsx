@@ -1,43 +1,34 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { CoinbaseProductStat } from '../api/products';
+import { Product } from '../api/products';
+import Colors from '../colors';
 import Text from '../components/Text';
-import { getPercentChange } from '../utils/pricing';
+import { getPercentChange, getPrettyNumber } from '../utils/numbers';
 
 interface Props {
-  name: string;
-  product: CoinbaseProductStat;
+  product: Product;
 }
 
-const MarketRow: React.FunctionComponent<Props> = ({
-  name,
-  product,
-}: Props) => {
-  const percentChange = getPercentChange(
-    product.stats_24hour.open,
-    product.stats_24hour.last,
-  );
+const MarketRow: React.FunctionComponent<Props> = ({ product }: Props) => {
+  const percentChange = getPercentChange(product.open, product.last);
 
   return (
     <View style={styles.container}>
       <View>
-        <Text type="primary" size={17} bold>
-          {name}
+        <Text variant="List1">
+          {product.baseCurrency} - {product.quoteCurrency}
         </Text>
-        <Text type="secondary" size={13} bold style={{ marginTop: 5 }}>
-          {product.stats_24hour.volume}
+        <Text variant="List2">
+          {getPrettyNumber(product.volume)} {product.baseCurrency}
         </Text>
       </View>
       <View style={{ flex: 1 }}></View>
       <View>
-        <Text type="primary" size={18} bold>
-          ${product.stats_24hour.last}
-        </Text>
+        <Text variant="List1">${product.last}</Text>
         <Text
-          type={percentChange < 0 ? 'red' : 'green'}
-          size={14}
-          bold
-          style={styles.pctChange}>
+          variant="List2"
+          color={percentChange >= 0 ? Colors.Green : Colors.Red}
+          right>
           {percentChange >= 0 && '+'}
           {percentChange}%
         </Text>
@@ -53,11 +44,6 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     backgroundColor: 'black',
-    paddingHorizontal: 25,
-    marginBottom: 17,
-  },
-  pctChange: {
-    alignSelf: 'flex-end',
-    marginTop: 5,
+    marginBottom: 22,
   },
 });
