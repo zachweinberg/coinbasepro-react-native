@@ -73,7 +73,7 @@ const App = () => {
             component={MarketsStack}
             options={{
               tabBarIcon: ({ color }) =>
-                renderTabIcon(require('./assets/bar.png'), color),
+                renderTabIcon(require('./assets/icons/bar.png'), color),
             }}
           />
           <Tab.Screen
@@ -81,7 +81,7 @@ const App = () => {
             component={PortfolioStack}
             options={{
               tabBarIcon: ({ color }) =>
-                renderTabIcon(require('./assets/chart.png'), color),
+                renderTabIcon(require('./assets/icons/chart.png'), color),
             }}
           />
           <Tab.Screen
@@ -89,7 +89,7 @@ const App = () => {
             component={PortfolioStack}
             options={{
               tabBarIcon: ({ color }) =>
-                renderTabIcon(require('./assets/orders.png'), color),
+                renderTabIcon(require('./assets/icons/orders.png'), color),
             }}
           />
           <Tab.Screen
@@ -97,7 +97,7 @@ const App = () => {
             component={PortfolioStack}
             options={{
               tabBarIcon: ({ color }) =>
-                renderTabIcon(require('./assets/person.png'), color),
+                renderTabIcon(require('./assets/icons/person.png'), color),
             }}
           />
         </Tab.Navigator>

@@ -1,53 +1,47 @@
 import React from 'react';
-import {
-  StyleSheet,
-  TouchableOpacity,
-  TouchableOpacityProps,
-} from 'react-native';
+import { ButtonProps, StyleSheet, TouchableOpacity } from 'react-native';
 import Colors from '../colors';
 import Text from './Text';
 
-interface CustomProps {
-  type: 'primary' | 'red' | 'green';
+type VariantTypes = 'Basic' | 'Buy' | 'Sell';
+
+const variants: Record<VariantTypes, object> = {
+  Basic: {
+    backgroundColor: '#e3e3e3',
+  },
+  Buy: {
+    backgroundColor: Colors.Green,
+  },
+  Sell: {
+    backgroundColor: Colors.Red,
+  },
+};
+
+interface CustomButtonProps extends ButtonProps {
+  variant: VariantTypes;
   title: string;
+  style?: any;
 }
 
-export type CustomButtonProps = TouchableOpacityProps & CustomProps;
-
 const Button: React.FunctionComponent<CustomButtonProps> = ({
-  style,
-  type,
   title,
+  variant,
+  style,
   ...props
 }) => {
-  let backgroundColor = Colors.Primary;
-
-  switch (type) {
-    case 'green':
-      backgroundColor = Colors.Green;
-      break;
-    case 'red':
-      backgroundColor = Colors.Red;
-      break;
-    default:
-      break;
-  }
-
   return (
     <TouchableOpacity
-      activeOpacity={0.8}
+      activeOpacity={0.6}
       {...props}
       style={StyleSheet.flatten([
-        style,
+        variant && variants[variant],
         {
-          padding: 12,
-          justifyContent: 'center',
-          alignItems: 'center',
-          backgroundColor,
-          borderRadius: 4,
+          paddingVertical: 14,
+          borderRadius: 7,
         },
+        style,
       ])}>
-      <Text type="secondary" size={19}>
+      <Text variant="Button" center>
         {title}
       </Text>
     </TouchableOpacity>

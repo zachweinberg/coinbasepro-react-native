@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { SectionList } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import styled from 'styled-components/native';
 import useSwr from 'swr';
 import { getProducts } from '../api/products';
-import Text from '../components/Text';
 import MarketRow from '../components/MarketRow';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import Text from '../components/Text';
 
 const renderLabelBar = () => (
   <LabelBar>
@@ -35,6 +35,7 @@ const MarketsScreen = () => {
       <SectionList
         sections={sections}
         renderSectionHeader={renderLabelBar}
+        keyExtractor={(item) => `${item.baseCurrency}-${item.quoteCurrency}`}
         renderItem={({ item }) => (
           <TouchableOpacity activeOpacity={0.7}>
             <MarketRow product={item} />

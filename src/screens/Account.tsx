@@ -1,8 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { NavigationComponent } from '../navigation';
 
-const AccountScreen: NavigationComponent = () => {
+const AccountScreen = () => {
   return (
     <View
       style={{

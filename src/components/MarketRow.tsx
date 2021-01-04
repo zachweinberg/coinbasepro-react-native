@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { View } from 'react-native';
+import styled from 'styled-components/native';
 import { Product } from '../api/products';
 import Colors from '../colors';
 import Text from '../components/Text';
@@ -13,7 +14,7 @@ const MarketRow: React.FunctionComponent<Props> = ({ product }: Props) => {
   const percentChange = getPercentChange(product.open, product.last);
 
   return (
-    <View style={styles.container}>
+    <Container>
       <View>
         <Text variant="List1">
           {product.baseCurrency} - {product.quoteCurrency}
@@ -33,17 +34,15 @@ const MarketRow: React.FunctionComponent<Props> = ({ product }: Props) => {
           {percentChange}%
         </Text>
       </View>
-    </View>
+    </Container>
   );
 };
 
 export default MarketRow;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'row',
-    backgroundColor: 'black',
-    marginBottom: 22,
-  },
-});
+const Container = styled.View`
+  flex: 1;
+  flex-direction: row;
+  background-color: black;
+  margin-bottom: 22px;
+`;

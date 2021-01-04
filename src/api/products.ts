@@ -33,7 +33,6 @@ const transformProducts = (data: ProductStatsResponse): Product[] => {
       quoteCurrency: stat.split('-')[1],
     };
   });
-  console.log(products);
   return products;
 };
 

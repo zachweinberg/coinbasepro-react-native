@@ -1,71 +1,59 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, StyleSheet, View } from 'react-native';
+import { View } from 'react-native';
+import styled from 'styled-components/native';
 import Button from '../components/Button';
+import CoinList from '../components/CoinList';
 import Text from '../components/Text';
-import { NavigationComponent } from '../navigation';
 
-const PortfolioScreen: NavigationComponent = () => {
+const PortfolioScreen = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.wrapper}>
-        <View>
-          <Text type="secondary" size={17} style={styles.label}>
-            Default Portfolio
-          </Text>
-          <Text type="primary" size={20} bold>
-            $20,000.00
-          </Text>
-        </View>
+    <Container>
+      <View>
+        <Text variant="CurrencyLabel">Default Portfolio</Text>
+        <Text variant="Currency">$26,006.31</Text>
+      </View>
 
-        <View style={{ flexDirection: 'row' }}>
-          <View style={{ flex: 1 }}>
-            <Text type="secondary" size={17} style={styles.label}>
-              Available Balance
-            </Text>
-            <Text type="primary" size={20} bold>
-              $19,800.00
-            </Text>
-          </View>
-          <View style={{ flex: 1 }}>
-            <Text type="secondary" size={17} style={styles.label}>
-              On orders
-            </Text>
-            <Text type="primary" size={20} bold>
-              $200.00
-            </Text>
-          </View>
+      <View style={{ flexDirection: 'row' }}>
+        <View style={{ width: '50%' }}>
+          <Text variant="CurrencyLabel">Available Balance</Text>
+          <Text variant="Currency">$26,006.31</Text>
         </View>
+        <View style={{ width: '50%' }}>
+          <Text variant="CurrencyLabel">On orders</Text>
+          <Text variant="Currency">$200.00</Text>
+        </View>
+      </View>
 
-        <View style={{ marginTop: 22 }}>
-          <Text type="secondary" size={18} spread style={{ marginBottom: 7 }}>
-            WALLETS
-          </Text>
-          <View
-            style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-            <Button title="Deposit" style={{ width: '50%', marginRight: 5 }} />
-            <Button title="Withdraw" style={{ width: '50%', marginLeft: 5 }} />
-          </View>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+      <View style={{ marginTop: 22 }}>
+        <Text variant="Label2">WALLETS</Text>
+        <ButtonContainer>
+          <Button
+            title="Deposit"
+            variant="Basic"
+            onPress={() => null}
+            style={{ width: '46%' }}
+          />
+          <Button
+            title="Withdraw"
+            variant="Basic"
+            onPress={() => null}
+            style={{ width: '46%' }}
+          />
+        </ButtonContainer>
+      </View>
+      <CoinList />
+    </Container>
   );
 };
+const Container = styled.ScrollView`
+  flex: 1;
+  background-color: black;
+  padding: 20px;
+`;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'black',
-  },
-  wrapper: {
-    marginTop: 15,
-    paddingHorizontal: 20,
-  },
-  balances: {
-    marginBottom: 20,
-  },
-  label: {
-    marginVertical: 10,
-  },
-});
+const ButtonContainer = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+`;
 
 export default PortfolioScreen;

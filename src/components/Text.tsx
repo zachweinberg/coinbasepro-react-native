@@ -1,13 +1,20 @@
 import React from 'react';
-import Colors from '../colors';
 import {
+  StyleSheet,
   Text as BaseText,
   TextProps,
   TextStyle,
-  StyleSheet,
 } from 'react-native';
+import Colors from '../colors';
 
-type VariantTypes = 'Label1' | 'Label2' | 'List1' | 'List2' | 'TextLabel';
+type VariantTypes =
+  | 'Label1'
+  | 'Label2'
+  | 'List1'
+  | 'List2'
+  | 'CurrencyLabel'
+  | 'Currency'
+  | 'Button';
 
 const variants: Record<VariantTypes, TextStyle> = {
   Label1: {
@@ -17,8 +24,11 @@ const variants: Record<VariantTypes, TextStyle> = {
     color: '#373737',
   },
   Label2: {
-    fontSize: 28,
-    letterSpacing: 0,
+    fontSize: 15,
+    letterSpacing: 2,
+    fontWeight: '500',
+    color: '#858585',
+    marginBottom: 12,
   },
   List1: {
     fontSize: 17,
@@ -31,8 +41,19 @@ const variants: Record<VariantTypes, TextStyle> = {
     color: '#575757',
     marginTop: 5,
   },
-  TextLabel: {
-    fontSize: 3,
+  CurrencyLabel: {
+    fontSize: 14,
+    color: '#989898',
+  },
+  Currency: {
+    color: '#fff',
+    fontSize: 22,
+    fontWeight: '600',
+    marginVertical: 7,
+  },
+  Button: {
+    fontSize: 15,
+    fontWeight: '700',
   },
 };
 

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import styled from 'styled-components/native';
-import { NavigationComponent } from '../navigation';
 
-const OrdersScreen: NavigationComponent = () => {
+const OrdersScreen = () => {
   return (
     <View
       style={{
