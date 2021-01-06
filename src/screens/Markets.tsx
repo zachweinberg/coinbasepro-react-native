@@ -22,6 +22,10 @@ const MarketsScreen = () => {
     return null;
   }
 
+  if (error) {
+    return <Text variant="Label1">Could not load markets</Text>;
+  }
+
   const sections = [{ title: 'Markets', data: products }];
 
   return (

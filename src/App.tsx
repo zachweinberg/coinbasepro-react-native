@@ -23,7 +23,6 @@ const screenOptions: StackHeaderOptions = {
   headerTitleStyle: { fontWeight: 'bold', fontSize: 35 },
   headerTitleContainerStyle: {
     paddingLeft: 2,
-    paddingTop: 10,
   },
 };
 
